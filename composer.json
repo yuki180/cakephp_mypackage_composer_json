@@ -1,0 +1,29 @@
+{
+  "repositories" : [
+    {
+      "type": "package",
+      "package": {
+        "name" : "cakephp/cakephp",
+        "version" : "2.4.0",
+        "dist" : {
+          "type" : "zip",
+          "url" : "https://github.com/cakephp/cakephp/archive/2.4.0.zip"
+        }
+      }
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "app/Plugin/DebugKit": ["cakephp/debug_kit"],
+      "app/Plugin/cakephp-opauth": ["uzyn/cakephp-opauth"],
+      "app/Plugin/boost_cake": ["slywalker/boost_cake"]
+    }
+  },
+  "require" : {
+    "php": ">=5.3",
+    "cakephp/cakephp" : "2.4.*",
+    "cakephp/debug_kit": "2.2.*@dev",
+    "uzyn/cakephp-opauth": "*",
+    "slywalker/boost_cake": "*"
+  }
+}
